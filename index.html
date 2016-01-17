@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mentemedia</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JS frameworks -->
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="select2/select2.min.js"></script>
+		<!-- CSS -->
+        <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="select2/select2.min.css" rel="stylesheet" />
+		<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="index.html.css" rel="stylesheet" />
+        <!-- custom JS -->
+        <script src="js/commonInfobox.js"></script>
+        <script src="index.html.js"></script>
+        <script src="../mentemedia-data/infobox-templates/unsw-subject.js"></script>
+        <script src="../mentemedia-data/infobox-templates/film.js"></script>
+        <script src="../mentemedia-data/infobox-templates/person.js"></script>
+        <script src="../mentemedia-data/infobox-templates/place.js"></script>
+    </head>
+    <body onload="bodyDidLoad()">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href=".">
+				<span class="fa fa-suitcase"></span>&nbsp;
+				mentemedia
+			</a>
+			</div>
+			<form class="navbar-form navbar-left" role="search">
+				<select id="manualInput" class="form-control" onchange="processManualInput()"><option value=""></option></select>
+			</form>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div id="contentWrapper">
+			<div class="row">
+				<div id="infoboxCol">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="infoboxTitle"></div>
+						<table class="table-condensed" id="infoboxTable">
+							<tbody id="infoboxOutput"></tbody>
+						</table>
+					</div>
+				</div>
+				<div id="pageCol">
+					<div class="panel panel-default">
+						<div class="panel-body" id="pageOutput"></div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

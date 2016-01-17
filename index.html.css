@@ -1,0 +1,61 @@
+#infoboxTable {
+	width: 100%;
+}
+#manualInput {
+	width: 200px;
+}
+.hiddenThing {
+	display: none;
+}
+html {
+	background-image: url('tileable_wood_texture.png');
+}
+#contentWrapper {
+	padding: 1.5vw;
+}
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 11pt;
+	width: 95%;
+	max-width: 900px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.8);
+}
+h1, h2 {   
+	font-weight: bold;
+}
+h1 {
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 200%;
+}
+h2 {
+	font-size: 150%;
+	color: gray;
+	font-style: italic;
+}
+p {
+	line-height: 175%;
+	text-align: justify;
+}
+.infoboxPicture {
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;
+	
+}
+.imageWrapper {
+	text-align: center;
+}
+#infoboxOutput {
+	font-size: 8pt;
+}
+
+pre !important {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
