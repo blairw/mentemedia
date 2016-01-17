@@ -82,7 +82,7 @@ function processManualInput() {
 }
 
 function findItemsInGroup(groupName, callbackFunction) {
-	$.get(dataDirectory+"manifest.json", function(manifest) {
+	$.get("getManifest.php", function(manifest) {
 		for (var i = 0; i < manifest.length; i++) {
 			$.get(dataDirectory+"items/"+manifest[i]+".json",
 				function(itemData) {
@@ -101,7 +101,7 @@ function findItemsInGroup(groupName, callbackFunction) {
 
 function findAllPeopleItems(callbackFunction) {
 	var itemsRemaining;
-	$.get(dataDirectory+"manifest.json", function(manifest) {
+	$.get("getManifest.php", function(manifest) {
 		for (var i = 0; i < manifest.length; i++) {
 			$.get(dataDirectory+"items/"+manifest[i]+".json",
 				function(itemData) {
